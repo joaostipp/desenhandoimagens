@@ -61,8 +61,11 @@ cor = 'red';
 else
 cor = 'blue';
 //ctx.fillStyle = color;
-ctx.fillStyle = cor; 
-ctx.fillRect(this.x, this.y, this.width, this.height);
+//ctx.fillStyle = cor;
+img = new Image();
+    img.src = "/image.png";
+ctx.fillStyle = ctx.drawImage(img,this.x,this.y,30,30);
+//ctx.fillRect(this.x, this.y, this.width, this.height);
 cont++;
 }
 }
@@ -72,7 +75,7 @@ myGameArea.clear();
 myGamePiece.x += 1;
 myGamePiece.y += 0.53;
 myGamePiece.update();
-}
+if(myGamePiece.x == 450);
 </script>
 
 <!-- Fim do Script do canvas-->
