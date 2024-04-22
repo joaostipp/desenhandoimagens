@@ -71,11 +71,13 @@ cont++;
 }
 
 function updateGameArea() {
-myGameArea.clear();
-myGamePiece.x += 1;
-myGamePiece.y += 0.53;
-myGamePiece.update();
-if(myGamePiece.x == 450);
+    if(myGamePiece.x != 450){
+        myGameArea.clear();
+        myGamePiece.x += 1;
+        myGamePiece.y += 0.53;
+        myGamePiece.update();
+    }
+}
 </script>
 
 <!-- Fim do Script do canvas-->
